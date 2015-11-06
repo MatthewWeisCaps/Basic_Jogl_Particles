@@ -19,13 +19,13 @@ void main() // main(void)?
 	
 // make brightness follow a sin curve
 	// make all position coords relative to -pi to pi
-	float sina = particle_position.x * 3.14159265359; // -1.0 to 1.0 * pi
-	float sinY = sin(sina); // -1 to 1
+//	float sina = particle_position.x * 3.14159265359; // -1.0 to 1.0 * pi
+//	float sinY = sin(sina); // -1 to 1
 	// get distance between where sin line is and where this particle is
-	float dist = abs(sinY-particle_position.y);//distance(sinY, particle_position.y); // dist between sinY (-1 to 1) and particle_position.y (-1 to 1)
-	float iDist = 1-dist; // inverse of distance
+//	float dist = abs(sinY-particle_position.y);//distance(sinY, particle_position.y); // dist between sinY (-1 to 1) and particle_position.y (-1 to 1)
+//	float iDist = 1-dist; // inverse of distance
 	
-	color = color * iDist; // make all color's brightness a factor of distance from sin curve
+//	color = color * iDist; // make all color's brightness a factor of distance from sin curve
 	
     gl_Position = vec4(particle_position, 1.0);
 }

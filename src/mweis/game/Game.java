@@ -54,7 +54,7 @@ public class Game implements GLEventListener {
 			Launch.DEBUG(numParticles + " particles @ ~FPS: " + (frames-lastFrames)/3);
 			Launch.DEBUG("FPS: " + Launch.getFPS());
 			lastFrames = frames;
-			if (Math.random() < .5) // 50% chance // bottleneck!
+			if (Math.random() < .5)
 				for (Particle p : particles)
 					p.invertRandom();
 		}
